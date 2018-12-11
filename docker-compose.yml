@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  firebird:
+    image: jacobalberty/firebird
+    environment:
+      ISC_PASSWORD: masterkey
+    volumes:
+      - ./firebird:/firebird
+    ports:
+      - "3070:3050"
